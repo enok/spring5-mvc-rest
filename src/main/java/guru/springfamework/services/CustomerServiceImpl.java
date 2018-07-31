@@ -4,6 +4,8 @@ import guru.springfamework.api.v1.mapper.CustomerMapper;
 import guru.springfamework.api.v1.model.CustomerDTO;
 import guru.springfamework.domain.Customer;
 import guru.springfamework.repositories.CustomerRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,8 @@ import java.util.stream.Collectors;
  * Created by jt on 9/27/17.
  */
 @Service
+@NoArgsConstructor
+@AllArgsConstructor
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerMapper customerMapper;
